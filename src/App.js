@@ -1,8 +1,9 @@
-import { createBrowserHistory } from "history";
-import { Route, Router, Switch } from "react-router";
+import { Route } from "react-router";
 import Header from "./layouts/Header/Header";
-import Home from "./pages/User/Home";
-import Product from "./pages/User/Product";
+import Footer from "./layouts/Footer/Footer";
+
+import Home from "./pages/Client/Home";
+import Product from "./pages/Client/Product";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/product">
         <Product />
       </Route>
+      <Footer />
     </div>
   );
 }

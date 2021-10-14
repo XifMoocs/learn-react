@@ -1,11 +1,24 @@
+.container {
+  display: block;
+}
 .d-flex {
   display: flex;
+}
+.p-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.fluid {
+  width: 100%;
 }
 .jc-center {
   justify-content: center;
   align-items: center;
 }
 .navbar {
+  height: 10vh;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px black solid;
@@ -47,10 +60,9 @@ a:hover:after, .active::after{
 .nav {
   flex-direction: flex-start;
 }
+
 .info-user {
-  margin-left: 5rem;
-}
-.info-user .user {
   flex-direction: flex-end;
-  margin-left: 2rem;
+  margin-left: 5rem;
+  align-items: center;
 }

@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer className="fluid">
+            <div className="d-flex jc-center">
+                <h3>Footer</h3>
+            </div>
+        </footer>
     )
 }
