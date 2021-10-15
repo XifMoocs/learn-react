@@ -1,11 +1,12 @@
 import React from "react";
 import "./Products.css";
+import { NavLink } from "react-router-dom";
 
 export default function Products(props) {
   return (
     <div className="cards">
       <div className="card-img d-flex jc-start">
-        <img src="" alt="product-img" />
+        <img src={props.img} alt="product-img" />
       </div>
       <div className="card-info d-flex jc-start">
         <div className="card-title">
@@ -15,9 +16,11 @@ export default function Products(props) {
           <p>{props.desc}</p>
         </div>
         <div className="card-btn d-flex jc-end">
-          <p>{props.price}</p>
-          <button>Add</button>
-          <button>Detail</button>
+          <b>{props.price} VND</b>
+          <button>Thêm vào giỏ hàng</button>
+          <button>
+            <NavLink to="/product/:id">Chi tiết...</NavLink>
+          </button>
         </div>
       </div>
     </div>
