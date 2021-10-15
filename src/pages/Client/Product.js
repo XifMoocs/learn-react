@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Products from "../../Components/Product/Products";
 export default function Product() {
   const product_data = [
@@ -59,6 +59,11 @@ export default function Product() {
       img: "https://picsum.photos/200/300?random=8",
     },
   ];
+
+  const [cart, setcart] = useState([]);
+  const addCart = (product_data) => {
+    setcart([...cart, { ...product_data }]);
+  };
   return (
     <div className="container main fluid">
       <div className="d-flex jc-center">
@@ -68,11 +73,14 @@ export default function Product() {
         <div className="products d-flex flex-wap jc-left">
           {product_data.map((product_data) => (
             <Products
+              data={product_data}
               key={product_data.id}
               title={product_data.title}
               desc={product_data.desc}
               price={product_data.price}
               img={product_data.img}
+              cart={cart}
+              addCart={addCart}
             />
           ))}
         </div>

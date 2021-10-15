@@ -3,6 +3,8 @@ import "./Products.css";
 import { NavLink } from "react-router-dom";
 
 export default function Products(props) {
+  const {cart, addCart} = props;
+  
   return (
     <div className="cards">
       <div className="card-img d-flex jc-start">
@@ -17,7 +19,10 @@ export default function Products(props) {
         </div>
         <div className="card-btn d-flex jc-end">
           <b>{props.price} VND</b>
-          <button>Thêm vào giỏ hàng</button>
+          <button onClick={() => {
+            addCart(props);
+            console.log(cart)
+          }}>Thêm vào giỏ hàng</button>
           <button>
             <NavLink to="/product/:id">Chi tiết...</NavLink>
           </button>
