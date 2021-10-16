@@ -19,7 +19,7 @@
 }
 .navbar {
   min-width: 600px;
-  height: 10vh;
+  height: 60px;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px black solid;
