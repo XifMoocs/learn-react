@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import Products from "../../Components/Product/Products";
 export default function Product(props) {
   const { product, cart, addCart } = props;
-  console.log(cart)
+  console.log(cart);
+  useEffect(() => {
+    document.title = "Sản phẩm";
+  }, []);
   return (
     <div className="container main fluid">
       <div className="d-flex jc-center">

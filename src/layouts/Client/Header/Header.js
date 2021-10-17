@@ -9,19 +9,19 @@ export default function Header() {
       <div className="navbar d-flex">
         <div className="img-logo">
           <NavLink to="/">
-            <img src={logo} alt="Logo" width="50px" />
+            <img src={logo} alt="Logo" width="50px"/>
           </NavLink>
         </div>
         <div className="section d-flex">
           <div className="nav">
             <ul>
-              <li>
+              {/* <li>
                 <NavLink activeClassName="active" to="/home">
                   Trang chủ
                 </NavLink>
-              </li>
+              </li> */}
               <li>
-                <NavLink activeClassName="active" to="/product">
+                <NavLink  activeClassName="active" to="/product">
                   Sản phẩm
                 </NavLink>
               </li>

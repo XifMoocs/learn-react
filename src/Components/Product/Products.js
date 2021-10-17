@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Products(props) {
   const { addCart, data } = props;
+
   return (
     <div className="cards">
       <div className="card-img d-flex jc-start">
