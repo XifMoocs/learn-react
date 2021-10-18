@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import CartDetail from "../../Components/Details/Cart/CartDetail";
-export default function Cart({ carts }) {
+export default function Cart(props) {
+  const {carts} = props;
   useEffect(() => {
     document.title = "Giỏ hàng";
-    console.log(carts);
   },[])
+  console.log(carts)
   return (
     <div className="d-flex box-cart">
       <div className="carts d-flex">
@@ -20,10 +21,11 @@ export default function Cart({ carts }) {
             carts.map((e) => <CartDetail key={e.id} cart={e} />)
           )}
         </div>
-        <div className="card-action d-flex jc-end">
+        <div className="cart-action d-flex jc-end">
           <button>Thanh toán</button>
         </div>
       </div>
     </div>
   );
 }
+ 

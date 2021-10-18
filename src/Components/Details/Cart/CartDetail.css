@@ -33,7 +33,7 @@
   border-radius: 0.5rem;
   margin-right: 1rem;
 }
-.card-action button {
+.cart-action button {
   border: none;
   outline: none;
   background: none;
@@ -41,7 +41,7 @@
   box-shadow: 0 0 0.3rem black;
   transition: box-shadow 0.1s;
 }
-.card-action button:active {
+.cart-action button:active {
   box-shadow: 0 0 0.1rem black;
 }
 .cart-detail {
@@ -60,10 +60,17 @@
   margin-right: 1rem;
 }
 .about {
-  width: 300px;
+  width: 200px;
 }
 .counter{
   display: flex;
   margin-right: 2rem;
-  width: 100px;
+  width: 150px;
+  align-self: center;
+}
+.price{
+  align-items: center;
+}
+.cart-action{
+  padding-top: 1rem;
 }
